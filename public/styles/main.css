@@ -1,0 +1,133 @@
+:root{
+    --spanish-bistre: hsla(53, 70%, 29%, 1);
+    --olive: hsla(54, 81%, 33%, 1);
+    --bistre-brown: hsla(46, 77%, 29%, 1);
+    --red: hsla(0, 100%, 50%, 1);
+    --orange-peel: hsla(36, 88%, 51%, 1);
+    --black: hsla(0, 0%, 0%, 1);
+    --jonquil: hsla(47, 93%, 53%, 1);
+}
+
+/* General */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+/* ---------- */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    position: absolute;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    margin-top: 1rem;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 40px;
+
+}
+.menu-items .item{
+    color: #eee;
+    text-decoration: none;
+    font-size:  20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .5s;
+}
+.item:hover{
+    color: var(--orange-peel);
+    filter: drop-shadow(8px 8px 4px var(--bistre-brown));
+}
+
+
+.menu-items .fix{
+    margin-right: 2rem;
+}
+.logo{
+    transition: .5s all;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.logo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: drop-shadow(8px 8px 4px var(--bistre-brown));
+}
+.logo img{
+    max-width: 140px;
+    min-width: 100%;
+    height: auto;
+}
+/* Mobile */
+.menu-bar{
+    display: none;
+
+}
+.menu-bar .bar{
+    font-size: 30px;
+    color: #eee;
+}
+.logo-bar{
+    display: none;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+/* ------- */
+
+
+
+/* ------- CARRUSEL ----------- */
+
+.content-carrusel{
+    position: absolute;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slidebg 20s linear infinite 1s;
+    animation-timing-function: ease-in-out;
+    background-image: url(/public/img/slider\ \(1\)-min.jpg);
+}
+
+@keyframes slidebg {
+    0% {
+        background-image: url(/public/img/slider\ \(1\)-min.jpg);
+    }
+    25% {
+        background-image: url(/public/img/slider\ \(2\)-min.jpg);
+    }
+    50% {
+        background-image: url(/public/img/slider\ \(3\)-min.jpg);
+    }
+    75% {
+        background-image: url(/public/img/slider\ \(5\)-min.jpg);
+    }
+    
+
+}
