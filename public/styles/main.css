@@ -6,6 +6,12 @@
     --orange-peel: hsla(36, 88%, 51%, 1);
     --black: hsla(0, 0%, 0%, 1);
     --jonquil: hsla(47, 93%, 53%, 1);
+
+    --c-kiwi-verde: #e8faf0;
+    --c-kiwi-rosa: #ffdbd6;
+    --c-kiwi-azul: #ddf2ff;
+    --c-very-pink: #ebebff;
+    --c-honey: #fff3e3;
 }
 
 /* General */
@@ -284,7 +290,8 @@ html{
     height: 100%;
     display: grid;
     grid-template-rows: 50px  1fr repeat(20, 50px);
-
+    position: relative;
+    z-index: 9;
 
 }
 
@@ -362,10 +369,62 @@ html{
 }
 /* -------------- */
 
+/* -------------------------------------- */
 
 .services{
-    grid-row: 5;
-    grid-column: 11;
-    align-self: center;
-    width: 200px;
+    grid-row: 4;
+    grid-column: 10;
+}
+
+.text-services{
+    text-align: center;
+}
+.text-services h1{
+    font-size: 35px;
+}
+.text-services p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+
+/* ----------- */
+
+.tiny img{
+    width:100px;
+    height: auto;
+}
+
+.tiny-services{
+    margin-top: 5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 400px);
+    /* pasar a 350 mobile */
+
+}
+
+.tiny{
+    width: 350px;
+    height: 200px;
+}
+.blue{
+    background: var(--c-kiwi-azul);
+}
+.pink{
+    background: var(--c-kiwi-rosa);
+}
+.green{
+    background: var(--c-kiwi-verde);
+}
+.very{
+    background: var(--c-very-pink);
+}
+.honey{
+    background: var(--c-honey);
 }
