@@ -8,12 +8,14 @@ menuBar.addEventListener('click', (e) => {
 })
 
 
+const closeA = document.querySelector('.mariscos')
+const closeB = document.querySelector('.bar')
 
 
-const btn  = document.getElementById('btn')
-const active = document.querySelector('.box')
+function clicka(params) {
+    alert('sexSo')
+}
 
-btn.addEventListener('click', () => {
-    active.classList.toggle('active')
-})
-
+closeA.getElementsByClassName('box').forEach(a => {
+    a.addEventListener('click', clicka);
+  });

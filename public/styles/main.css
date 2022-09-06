@@ -217,7 +217,7 @@ html{
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
-    opacity: .3;
+    opacity: .4;
     z-index: -9;
 }
 
@@ -231,7 +231,6 @@ html{
     text-align: center;
     width: 90%;
 }
-
 .main-text .tittle{
     font-size: calc(15px + 1.5vw);
     font-weight: 700;
@@ -241,7 +240,6 @@ html{
     font-size: calc(14px + .5vw);
     line-height: 30px;
 }
-
 
 
 
@@ -258,6 +256,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 }
 .info-content::before{
     content: '';
@@ -276,86 +275,97 @@ html{
 
 
 /* SECTION 5 */
-/* ------- ------------ */
-
-/* .servicios{
-    position: absolute;
-    width: 100%;
+/* ---------- SERVICES ------------ */
 
 
-}
 
-.servicios .text{
-    font-size: 20px;
-    color: #000;
-    width: 100%;
-    grid-column: 2/20;
-    grid-row: 2;
-    position: relative;
-    border-radius: .5rem;
-    border: 1px solid #000;
-    overflow: hidden;
-    text-align: center;
-}
-
-.servicios .text::before{
-    content: '';
-    top: 0;bottom: 0;left: 0;right: 0;
-    position: absolute;
-    width: 100%;
-    height: 20px;
-    background: var(--black);
-    z-index: -99;
-    filter: drop-shadow(8px 8px 3px var(--bistre-brown));
-}
-.servicios .text::after{
-    content: '';
-    bottom: 0;left: 0;right: 0;
-    position: absolute;
-    background: var(--jonquil);
-    width: 100%;
-    height: 20px;
-    z-index: -99;
-    filter: drop-shadow(8px 8px 3px var(--bistre-brown));
-} 
-
-
-.servicios .text .span-main span{
-    color: var(--jonquil);
-} */
-/* 
-.servicios img{
-    width: 100%;
-    height: 300px;
-    transition: .5s all;
-}
-.box-servicios{
+.servicios{
     width: 100%;
     height: 100%;
-    transition: all 1s;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, 350px);
-    gap: 100px;
-    grid-row: 4;
+    grid-template-rows: 50px  1fr repeat(20, 50px);
+
+
+}
+
+.box-services{
     grid-column: 1/20;
+    grid-row: 2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, 350px);
+
+}
+
+.box{
+    width: 350px;
+    height: 400px;
+    background: rgb(0, 0, 0, .7);
+    position: relative;
+    transition: .5s all;
+    border-radius: .5rem;
+    overflow: hidden;
 }
 .box{
-
-    width: 350px;
-    height: 350px;
-    text-align: start;
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
-
+    color: #eee;
 
 }
-
-.box h1{
-    font-size: 16px;
-    width: 40%;
+.box .text{
     text-align: center;
-    padding: 1rem;
-} */
+    font-size: 14px;
+    padding: 2.5rem;
+}
+
+
+/* BEFORE ELEMENT */
+.bar::before,
+.piscina::before,
+.mariscos::before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -9;
+    opacity: 1;
+}
+
+.servicios .bar::before{
+    background: url(/public/img/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    background-size: cover;
+}
+.mariscos::before{
+    background: url(/public/img/mariscos-min.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.piscina::before{
+    background: url(/public/img/piscina.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.box:hover{
+    background: rgb(0, 0, 0, 0);
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0);
+}
+/* -------------- */
+
+
+.services{
+    grid-row: 5;
+    grid-column: 11;
+    align-self: center;
+    width: 200px;
+}
