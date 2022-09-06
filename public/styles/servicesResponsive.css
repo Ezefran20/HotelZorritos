@@ -21,11 +21,11 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 415px) {
     .services{
         grid-row: 4;
         grid-column: 13;
-        width: calc(200px + 1.5vw);
+        width: calc(190px + 1.5vw);
     }
 }
 @media screen and (max-width: 400px) {
