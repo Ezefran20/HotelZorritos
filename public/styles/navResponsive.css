@@ -48,14 +48,14 @@
 
 @media screen and (max-width: 650px) {
     .text .tittle{
-        font-size: calc(15px + 3vw);
+        font-size: calc(15px + 3.5vw);
     }
     .text .sub-tittle{
-        font-size: calc(13px + 2vw);
+        font-size: calc(13px + 2.5vw);
     }
     .text .sub{
         margin-top: .1rem;
-        font-size: calc(13px + 2vw);
+        font-size: calc(13px + 2.5vw);
     }
     
 }
