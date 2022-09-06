@@ -21,7 +21,13 @@
     }
 }
 
-
+@media screen and (max-width: 420px) {
+    .services{
+        grid-row: 4;
+        grid-column: 13;
+        width: calc(200px + 1.5vw);
+    }
+}
 @media screen and (max-width: 400px) {
     .box-services{
         grid-template-columns: repeat(auto-fit, 250px);
@@ -42,7 +48,7 @@
 
 @media screen and (max-width: 375px) {
     .services{
-        grid-row: 5;
+        grid-row: 4;
         grid-column: 15;
         width: calc(200px + 1.5vw);
     }
