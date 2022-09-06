@@ -27,8 +27,12 @@ body{
 
 html{
     overflow-x: hidden;
+    position: relative;
 }
 
+
+/* SECTION 1 */
+/* --------- NAVBAR ----------- */
 
 .navbar{
     position: absolute;
@@ -59,10 +63,9 @@ html{
 }
 .item:hover{
     color: var(--orange-peel);
-    filter: drop-shadow(8px 8px 4px var(--bistre-brown));
+    filter: drop-shadow(8px 8px 4px var(--bistre-brown))
+
 }
-
-
 .menu-items .fix{
     margin-right: 2rem;
 }
@@ -71,7 +74,7 @@ html{
     margin-left: 4rem;
     margin-right: 4rem;
     -webkit-filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
-    
+
 }
 .logo:hover{
     transform: scale(1.1);
@@ -96,17 +99,29 @@ html{
     margin-left: 0rem;
     margin-right: 0rem;
 }
+.menu-toggle-bar{
+    display: none;
+}
+.menu-toggle-bar .item{
+    color: #eee;
+    font-size: 18px;
+}
+
 /* ------- */
 
 
 
+/* SECTION 2 */
 /* ------- CARRUSEL ----------- */
 
+
+
 .content-carrusel{
-    position: absolute;
+    position: relative;
+    top: 0;
     z-index: -9;
     width: 100%;
-    height: 100%;
+    height: 850px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,7 +131,6 @@ html{
     animation-timing-function: ease-in-out;
     background-image: url(/public/img/slider\ \(1\)-min.jpg);
 }
-
 @keyframes slidebg {
     0% {
         background-image: url(/public/img/slider\ \(1\)-min.jpg);
@@ -131,3 +145,109 @@ html{
         background-image: url(/public/img/slider\ \(5\)-min.jpg);
     }
 } 
+.content-carrusel{
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(20, 42.5px);
+
+}
+.text{
+    grid-column: 7/20;
+    grid-row: 14;
+    text-align: center;
+    color: #eee;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.text .tittle{
+    font-size: calc(15px + 2.5vw);
+    font-weight: 700;
+    margin-bottom: -1rem;
+}
+.text .sub-tittle{
+    font-size: calc(13px + 1.5vw);
+    font-weight: 400;
+}
+.text .sub{
+    margin-top: -1.5rem;
+    font-size: calc(13px + 1.5vw);
+    font-weight: 500;
+    color: var(--jonquil);
+    filter: drop-shadow(9px 9px 5px var(--bistre-brown));
+}
+
+
+
+
+/* SECTION 3 */
+/* ---------- MAIN-CONTENT ------------- */
+
+
+
+.main-content{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background: #000;
+    z-index: 9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content::before{
+    content: '';
+    top: 0;right: 0;bottom: 0;left: 0;
+    position: absolute;
+    background: url(/public/img/slider\ \(5\)-min.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .4;
+    z-index: -9;
+}
+
+.main-text{
+    color: #eee;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+}
+
+.main-text .tittle{
+    font-size: calc(15px + 1.5vw);
+    font-weight: 700;
+    color: var(--jonquil);
+}
+.main-text .sub-tittle{
+    font-size: calc(14px + .5vw);
+    line-height: 30px;
+}
+
+
+
+
+/* SECTION 4 */
+
+/* ------- INFO - IMG --------- */
+
+
+
+.info-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-content .image img{
+    width: 100%;
+    height: auto;
+}
