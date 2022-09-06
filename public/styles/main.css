@@ -204,6 +204,7 @@ html{
     position: absolute;
     background: url(/public/img/slider\ \(5\)-min.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     opacity: .4;
