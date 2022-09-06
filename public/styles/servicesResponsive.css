@@ -1,7 +1,7 @@
 
 @media screen and (max-width: 750px) {
     .services{
-        grid-row: 3;
+        grid-row: 4;
         grid-column: 12;
         width: calc(200px + 1.5vw);
     }
@@ -21,11 +21,11 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 530px) {
     .services{
         grid-row: 4;
         grid-column: 13;
-        width: calc(190px + 1.5vw);
+        width: calc(200px + 1.5vw);
     }
 }
 @media screen and (max-width: 400px) {
