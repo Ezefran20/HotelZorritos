@@ -60,7 +60,7 @@
     
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
     .logo img{
         max-width: 100px;
     }
@@ -73,20 +73,17 @@
         margin-left: 1rem;
     }
 
-    /* Aling text */
-    .text{
-        grid-row: 8;
-    }
+    /* text */
 
     .text .tittle{
-        font-size: calc(15px + 3.5vw);
+        font-size: calc(15px + 4vw);
     }
     .text .sub-tittle{
-        font-size: calc(13px + 2.5vw);
+        font-size: calc(13px + 3vw);
     }
     .text .sub{
         margin-top: .1rem;
-        font-size: calc(13px + 2.5vw);
+        font-size: calc(13px + 3vw);
     }
     
 }
