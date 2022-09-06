@@ -20,7 +20,7 @@
 
     /* Aling Text */
 
-    .text{
+    .content-carrusel  .text{
         grid-column: 2/25;
         grid-row: 9;
     }
@@ -47,17 +47,17 @@
 }
 
 @media screen and (max-width: 650px) {
-    .text .tittle{
+    .content-carrusel .tittle{
         font-size: calc(15px + 3.5vw);
     }
-    .text .sub-tittle{
+    .content-carrusel .sub-tittle{
         font-size: calc(13px + 2.5vw);
     }
-    .text .sub{
+    .content-carrusel  .sub{
         margin-top: .1rem;
         font-size: calc(13px + 2.5vw);
     }
-    .text{
+    .content-carrusel .text{
         grid-row: 10;
     }
 }
@@ -76,17 +76,17 @@
     }
 
     /* Aling text */
-    .text{
+    .content-carrusel   .text{
         grid-row: 9;
     }
 
-    .text .tittle{
+    .content-carrusel   .text .tittle{
         font-size: calc(15px + 3.5vw);
     }
-    .text .sub-tittle{
+    .content-carrusel   .text .sub-tittle{
         font-size: calc(13px + 2.5vw);
     }
-    .text .sub{
+    .content-carrusel  .text .sub{
         margin-top: .1rem;
         font-size: calc(13px + 2.5vw);
     }
