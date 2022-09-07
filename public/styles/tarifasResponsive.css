@@ -1,0 +1,9 @@
+@media screen and (max-width: 320px) {
+    .rooms{
+        grid-template-columns: repeat(auto-fit, 280px); 
+    }
+    .room{
+        width: 280px;
+    }
+}
+    

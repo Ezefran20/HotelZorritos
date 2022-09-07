@@ -135,7 +135,7 @@ html{
 .content-carrusel{
     position: relative;
     top: 0;
-    z-index: -9;
+    z-index: -1;
     width: 100%;
     height: 850px;
     background-position: center center;
@@ -224,7 +224,7 @@ html{
     background-attachment: fixed;
     background-size: cover;
     opacity: .4;
-    z-index: -9;
+    z-index: -1;
 }
 
 .main-text{
@@ -263,6 +263,7 @@ html{
     justify-content: center;
     align-items: center;
     z-index: 9;
+    padding-bottom: 2rem;
 }
 .info-content::before{
     content: '';
@@ -270,7 +271,7 @@ html{
     position: absolute;
     background: #000;
     opacity: 1;
-    z-index: -9;
+    z-index: -1;
 }
 
 .info-content .image img{
@@ -287,11 +288,10 @@ html{
 
 .servicios{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: grid;
     grid-template-rows: 50px;
     position: relative;
-    z-index: 9;
 }
 
 .box-services{
@@ -338,7 +338,7 @@ html{
     right: 0;
     bottom: 0;
     position: absolute;
-    z-index: -9;
+    z-index: -1;
     opacity: 1;
 }
 
@@ -373,6 +373,8 @@ html{
 .services{
     grid-row: 4;
     grid-column: 10;
+    height: auto;
+    padding-bottom: 3rem;
 }
 
 .text-services{
@@ -443,14 +445,6 @@ html{
 /* SECTION 6 */
 /* ------   HABITACIONES    -------- */
 
-/* .habitaciones{
-    height: 1100px;
-    width: 100%;
-    background: rgb(168, 83, 83);
-    position: relative;
-} */
-
-
 
 
 
@@ -468,16 +462,43 @@ html{
     display: grid;
     align-items: center;
     position: relative;
+    background: rgb(0, 0, 0, .8);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.tarifas::before{
+    content: '';
+    top: 0;right: 0;bottom: 0;left: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url(/public/img/IMG_5547.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
 }
 
 .text-tarifa{   
-    margin-top: 5rem;
     position: relative;
     text-align: center;
+    text-align: center;
+    color: #eee;
+    margin: 1rem;
+}
+.text-tarifa h1{
+    font-size: calc(15px + 2.5vw);
+}
+.text-tarifa p{
+    font-size: calc(14px + .5vw);
 }
 .sub-tarifa{
     text-align: center;
     margin: 2.5rem;
+    color: #eee;
+}
+.sub-tarifa span{
+    color: var(--jonquil);
 }
 .tarifa-slow{
     grid-row: 5;
@@ -500,7 +521,7 @@ html{
     display: grid;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fit, 300px); 
     position: relative;
 }
@@ -520,12 +541,18 @@ html{
 .room{
     text-align: start;
     width: 300px;
-    height: 670px;
+    height: auto;
     background: white;
     position: relative;
     border-radius: .5rem;
     overflow: hidden;
-    box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+    filter: drop-shadow(1px 1px 4px white);
+    transition: .5s all;
+}
+.room:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 38px -9px rgba(255, 255, 255, 0.75);
 }
 .room-content{
     padding: .8rem;
@@ -542,9 +569,8 @@ html{
 .room .text-room{
     color: hsla(0, 0%, 0%, .9);
     font-size: 16px;
-    
     display: grid;
-    grid-template-rows: repeat(3, 155px);
+    grid-template-rows: 110px 190px 145px;
 }
 .text-room .extras{ 
     display: flex;
