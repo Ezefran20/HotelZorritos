@@ -130,7 +130,13 @@ html{
 /* SECTION 2 */
 /* ------- CARRUSEL ----------- */
 
-
+.content-carrusel::before{
+    content: '';
+    top: 0;left: 0;right: 0;bottom: 0;
+    position: absolute;
+    background: rgb(0, 0, 0, .205);
+    z-index: -1;
+}
 
 .content-carrusel{
     position: relative;
