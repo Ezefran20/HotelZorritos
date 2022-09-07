@@ -287,12 +287,11 @@ html{
 
 .servicios{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: grid;
-    grid-template-rows: 50px  1fr repeat(20, 50px);
+    grid-template-rows: 50px;
     position: relative;
     z-index: 9;
-
 }
 
 .box-services{
@@ -393,7 +392,7 @@ html{
 /* ----------- */
 
 .tiny img{
-    width:100px;
+    width: 100px;
     height: auto;
 }
 
@@ -404,7 +403,7 @@ html{
     justify-content: center;
     text-align: center;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-columns: repeat(auto-fill, 400px);
     /* pasar a 350 mobile */
 
 }
@@ -412,6 +411,7 @@ html{
 .tiny{
     width: 350px;
     height: 200px;
+    border-radius: .5rem;
 }
 .blue{
     background: var(--c-kiwi-azul);
@@ -428,3 +428,71 @@ html{
 .honey{
     background: var(--c-honey);
 }
+
+.tiny img{
+    transition: .5s all;
+}
+.tiny img:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(4px 4px 4px);
+    cursor: pointer;
+}
+
+
+
+/* SECTION 6 */
+/* ------   HABITACIONES    -------- */
+
+/* .habitaciones{
+    height: 1100px;
+    width: 100%;
+    background: rgb(168, 83, 83);
+    position: relative;
+} */
+
+
+
+
+
+
+
+
+/* SECTION 7 */
+/* ------   TARIFAS    -------- */
+
+
+
+.tarifas{
+    width: 100%;
+    height: 900px;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.text-tarifa{   
+    margin-top: 5rem;
+    position: relative;
+    text-align: center;
+}
+.sub-tarifa{
+    grid-row: 5;
+    text-align: center;
+}
+
+.rooms{
+    grid-row: 10;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 300px); 
+}
+
+.room{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background: var(--c-kiwi-azul);
+} 
