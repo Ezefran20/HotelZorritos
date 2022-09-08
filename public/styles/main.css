@@ -693,7 +693,7 @@ html{
     transition: all .5s;
 }
 .redes a:hover{
-    color: var(--jonquil);
+    color: var(--);
     transform: scale(1.1);
 }
 .redes{

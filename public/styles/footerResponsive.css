@@ -30,4 +30,20 @@
         gap: auto;
         margin-left: 0rem;
     }
+    .correo{
+        font-size: calc(12px + 1vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .correo{
+        font-size: calc(12px + 1vw);
+    }
+    .redes{
+        gap: 20px;
+    }
+    .copyright .copy-text{
+        padding-top: 1.5rem;
+
+    }
 }
