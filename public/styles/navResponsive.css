@@ -38,7 +38,6 @@
         text-align: center;
         transform: translateX(-170%);
         transition: .5s all;
-        gap: 10px;
     }
     .toggle{
         transform: translateX(0%);

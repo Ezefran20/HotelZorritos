@@ -628,7 +628,6 @@ html{
     height: auto;
 }
 .logo-footer{
-    margin-right: 3rem;
     transition: all .5s;
     -webkit-filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 1px white);
 }
