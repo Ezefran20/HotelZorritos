@@ -1,0 +1,33 @@
+@media screen and (max-width: 1110px) {
+    .footer .footer-contact{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .logo-footer{
+        margin-right: 0;
+    }
+    .redes{
+        gap: auto;
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width: 970px) {
+    .copyright .copy-text{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .copy-text p{
+        margin-top: -5px;
+    }
+    .footer .footer-contact{
+        gap: 20px;
+        flex-direction: column;
+    }
+    .logo-footer{
+        margin-right: 0;
+    }
+    .redes{
+        gap: auto;
+        margin-left: 0rem;
+    }
+}
