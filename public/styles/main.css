@@ -693,7 +693,7 @@ html{
     transition: all .5s;
 }
 .redes a:hover{
-    color: var(--);
+    color: var(--jonquil);
     transform: scale(1.1);
 }
 .redes{
@@ -705,4 +705,34 @@ html{
 
 .copy-text span{
     color: var(--jonquil);
+}
+
+.up-btn{
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    margin: 2rem;
+
+    background-color: var(--jonquil);
+    transition: .5s all;
+    transform: rotateY(0%);
+    z-index: 9;
+}
+
+.btnToggle{
+    transform: rotateY(100%);
+}
+
+.up-btn a{
+    font-size: 25px;
+    color: #000;
 }

@@ -12,3 +12,18 @@ const on = document.querySelector('.onclick')
 active.addEventListener('click', () => {
     on.classList.toggle('active')
 })
+
+// ------------------ BOTON UP --------------------- //
+
+const btn_scrolltop = document.getElementById("up-btn")
+btn_scrolltop.addEventListener('click', () => {
+  window.scrollTo(0, 0)
+})
+
+window.onscroll = () => {
+add_btn_scrolltop()
+}
+
+const add_btn_scrolltop = () => {
+  btn_scrolltop.classList.toggle("btnToggle")
+}

@@ -33,9 +33,11 @@
     .correo{
         font-size: calc(12px + 1vw);
     }
+
 }
 
 @media screen and (max-width: 400px) {
+
     .correo{
         font-size: calc(12px + 1vw);
     }
@@ -46,4 +48,15 @@
         padding-top: 1.5rem;
 
     }
+}
+
+@media screen and (max-width: 500px) {
+
+.up-btn{
+    width: 45px;
+    height: 45px;
+}
+.up-btn a{
+    font-size: 22px;
+}
 }
